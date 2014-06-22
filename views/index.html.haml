@@ -1,0 +1,203 @@
+-# encoding: utf-8
+!!!5
+%html
+  %head
+    %meta{ charset: 'utf-8', 'http-equiv' => 'Content-Type', content: 'text/html'  }
+
+    %title CCC Video Operation Center
+    %link{ href: '//c3voc.de/eventkalender/events.atom', rel: 'alternate', title: 'Atom - c3voc events', type: 'application/atom+xml' }
+    %link{ href: '//media.ccc.de/news.atom', rel: 'alternate', title: 'CCC TV - media.ccc.de', type: 'application/atom+xml' }
+
+    %link{ href: 'css/bootstrap/css/bootstrap.min.css', rel: 'stylesheet'}
+    %link{ href: 'css/bootstrap/css/bootstrap-theme.min.css', rel: 'stylesheet' }
+    %link{ href: 'css/font-awesome/css/font-awesome.min.css', rel: 'stylesheet' }
+
+    %link{ href: 'css/style.css', rel: 'stylesheet' }
+
+  %body#top
+    #toplink
+      %a{ href: '#top' }
+
+    %header
+      %nav.navbar
+        %ul
+          %li.page-scroll
+            %i{ class: 'fa fa-caret-square-o-right'}
+            %a{ href: '#about' }
+              About
+          %li.page-scroll
+            %i.fa.fa-video-camera
+            %a{ href: '#events' } Events
+          %li.page-scroll
+            %i.fa.fa-envelope
+            %a{ href: '#contact' } Contact
+
+    #about.text-center
+      %h3 CCC Video Operation Center
+      %img{ src: 'img/30c3katze-nibbler.jpg' }
+
+      #container
+        #content
+          CCC Video Operation Center (c3voc) is a working group consist of
+          %a{ href: 'https://ccc.de' } Chaos Computer Club
+          enthusiasts running lecture recording and streaming infrastructure on and for different chaos
+          %a{ href: 'https://c3voc.de/eventkalender'} events or conferences
+          \.
+          #sections
+            #content-events
+              .logo
+                %a{ href: '#events' }
+                  %i.fa.fa-4x.fa-video-camera
+              .headline
+                %h4 Events
+              .content
+                Art party salvia chambray PBR. Fingerstache VHS pork belly food truck.
+            #content-contact
+              .logo
+                %a{ href: '#contact' }
+                  %i.fa.fa-4x.fa-envelope
+              .headline
+                %h4 Contact
+              .content
+                Raw denim pug food truck, fanny pack readymade pork belly +1 fingerstache occupy American Apparel Portland asymmetrical. Squid gentrify scenester post-ironic fap.
+            #content-recordings
+              .logo
+                %a{ href: 'http://media.ccc.de' }
+                  %i.fa.fa-4x.fa-cloud
+              .headline
+                %h4 Recordings
+              .content
+                PBR organic mixtape direct trade vegan, biodiesel XOXO.
+
+            #content-streaming
+              .logo
+                %a{ href: 'http://streaming.media.ccc.de' }
+                  %i.fa.fa-4x.fa-play-circle-o
+              .headline
+                %h4 Streaming
+              .content
+                Swag Truffaut mixtape wolf drinking vinegar, Austin stumptown bicycle rights mlkshk forage art party slow-carb put a bird on it.
+
+    #events.text-center
+      %h3 Events
+      %img{ src: 'img/raw_IMG_7013_klein.jpg' }
+
+      %ul.tile.clearfix
+        -# camp 2011
+        %li.event
+          .captions
+            %p.caption-inner
+              %h4.title
+                Camp 2011
+              Chaos communication camp take place in
+            %a{ href: "http://media.ccc.de/browse/conferences/camp2011/", target:"_blank" } Recordings
+          %img{ src: "img/camp2011.jpg", alt:"Chaos Communication Camp 2011" }
+        -# 30c3
+        %li.event
+          .captions
+            %p.caption-inner
+              %h4.title
+                30C3
+            %a{ href: "", target:"_blank", class: "viewProject" } 30C3
+          %img{ src: "img/30c3.jpg", alt:"30C3" }
+
+        -# froscon
+        %li.event
+          .captions
+            %p.caption-inner
+              %h4.title
+                FrOSCon
+            %a{ href: "http://www.froscon.de", target:"_blank", class: "viewProject" } FrOSCon
+
+          %img{ src: "img/froscon.jpg", alt:"FrOSCon" }
+
+        %li
+          %figure
+            %a{ href: '//eventkalender/' }
+              %i.fa.fa-arrow-circle-o-right.fa-4x{ name: 'Upcoming events'}
+
+      %a{ href: "#top", class:"back-to-top" } Back to Top
+
+
+
+    #contact.text-center
+      %h3 Contact
+      %img{ src: 'img/raw_IMG_7044_klein.jpg' }
+
+      #container
+        #content
+          .text
+            Put a bird on it Intelligentsia slow-carb leggings kogi banjo. Photo booth small batch slow-carb, selvage forage iPhone McSweeney's next level. Synth occupy scenester, kale chips mlkshk Tonx sartorial keffiyeh keytar squid freegan Vice authentic direct trade. Keffiyeh Wes Anderson brunch tattooed whatever disrupt. Distillery stumptown crucifix direct trade, skateboard plaid +1 pickled pour-over quinoa. Chia put a bird on it locavore occupy seitan. Meh tote bag slow-carb, bitters meggings salvia letterpress messenger bag forage yr Godard Vice plaid four loko keytar.
+          .list
+            %ul.list-inline.banner-social-buttons
+              %li
+                %a{ href: "https://twitter.com/c3voc", class: "btn btn-default btn-lg" }
+                  %i.fa.fa-twitter.fa-fw
+                  %span.network-name
+                    Twitter
+              %li
+                %a{ href: "https://github.com/voc", class: "btn btn-default btn-lg" }
+                  %i{ class: "fa fa-github fa-fw" }
+                  %span.network-name
+                    Github
+
+    %footer
+      c3voc - 2014
+
+    %script{ src: "css/bootstrap/js/bootstrap.min.js" }
+    %script{ src: "https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" }
+    %script{ src: "js/jquery.hcaptions.js" }
+
+
+    :javascript
+      $(document).ready(function() {
+        // fade in event image text
+        $('.event').hover(
+          function(){
+             $(this).find('.captions').slideDown(500); //.fadeIn(500)
+           },
+           function(){
+            $(this).find('.captions').slideUp(500); //.fadeOut(500)
+        });
+
+        // fade in and out back to top button
+        var offset = 220;
+        var duration = 400;
+        jQuery(window).scroll(function() {
+            if (jQuery(this).scrollTop() > offset) {
+                jQuery('.back-to-top').fadeIn(duration);
+            } else {
+                jQuery('.back-to-top').fadeOut(duration);
+            }
+        });
+        jQuery('.back-to-top').click(function(event) {
+            event.preventDefault();
+            jQuery('html, body').animate({scrollTop: 0}, duration);
+            return false;
+        })
+
+        // smooth scrolling for document links
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, duration);
+              return false;
+            }
+          }
+        });
+
+        $('a').click( function() {
+          changeStyle('#28c3ab', '#000', 'bold');
+          setTimeout("changeStyle('#000', '#fff', 'normal')", 120);
+        });
+      });
+
+      function changeStyle(backgroundcolor, fontcolor, weight) {
+        document.body.style.background=backgroundcolor;
+        document.body.style.color=fontcolor;
+        document.body.style.fontWeight=weight;
+      }
