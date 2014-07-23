@@ -17,30 +17,27 @@ task :build do
   puts
   puts 'Copy static files:'
   static_files = {
-
+    'static/font-awesome' => 'output/css/font-awsome',
+    'static/js/jquery.hcaptions.js' => 'output/js/jquery.hcaptions.js',
+    'static/bootstrap' => 'output/css/bootstrap'
   }.each do |source, destination|
-
+    copy_static_files
   end
 
   puts
   puts 'Render css:'
   puts 'static/css/style.css.scss → output/css/style.css'
-  File.open(Pathname.pwd + 'output/style.css', 'w') do |f|
-    f.puts Sass::Engine.for_file(Pathname.pwd + 'static/css/style.css.scss', syntax: :scss).render
-  end
 
-  puts
-  puts 'Copy:'
-  puts 'static/font-awesome → output/css/font-awsome'
-  FileUtils.copy_entry Pathname(Pathname.pwd + 'static/font-awesome'), Pathname(Pathname.pwd + 'output/css/font-awesome')
-  puts 'static/bootstrap → output/css/bootstrap'
-  FileUtils.copy_entry Pathname(Pathname.pwd + 'static/bootstrap'), Pathname(Pathname.pwd + 'output/css/bootstrap')
-  puts 'static/js/jquery.hcaptions.js → output/js/jquery.hcaptions.js'
-  FileUtils.copy_entry Pathname(Pathname.pwd + 'static/js/jquery.hcaptions.js'), Pathname(Pathname.pwd + 'output/js/jquery.hcaptions.js')
 end
 
 task :clear do
 
+end
+
+def render_scss(source, destination)
+  File.open(Pathname.pwd + 'output/style.css', 'w') do |f|
+    f.puts Sass::Engine.for_file(Pathname.pwd + 'static/css/style.css.scss', syntax: :scss).render
+  end
 end
 
 def render_web_site(source, destination)
@@ -50,5 +47,5 @@ def render_web_site(source, destination)
 end
 
 def copy_static_files(source, destination)
-
+  FileUtils.copy_entry Pathname(Pathname.pwd + source, Pathname(Pathname.pwd + destination)
 end
