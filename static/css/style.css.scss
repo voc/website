@@ -287,15 +287,19 @@ html {
 
       #container {
         display: inline;
+
         #content {
           padding-top: 10px;
           width: 700px;
           margin-left: auto;
           margin-right: auto;
           text-align: inherit;
+
+          .list {
+            margin-top: 10px;
+          }
         }
       }
-
     }
 
     .back-to-top {
