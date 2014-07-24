@@ -266,6 +266,9 @@ html {
               padding-left: 30px;
               width:175px;
             }
+            .list-inline {
+            	margin-top: 10px;
+            }
           }
         }
 
@@ -322,6 +325,7 @@ html {
   }
 
   footer {
+  	margin-top: 10px;
     color: $green;
   }
 }
