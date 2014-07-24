@@ -39,6 +39,7 @@ task :build do
     'static/img/froscon.jpg' => 'output/img/froscon.jpg',
     'static/img/raw_IMG_7044_klein.jpg' => 'output/img/raw_IMG_7044_klein.jpg',
     'static/img/ep14.jpg' => 'output/img/ep14.jpg',
+    'static/img/flattr-badge-large.png' => 'output/img/flattr-badge-large.png',
   }.each do |source, destination|
     copy_static_files(source, destination)
   end
