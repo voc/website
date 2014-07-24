@@ -12,7 +12,7 @@ task :build do
     puts "Create output directory"
 
     output_dir.mkdir
-    ['css', 'css/font-awsome', 'js', 'img'].each do |dir|
+    ['css', 'css/font-awesome', 'js', 'img'].each do |dir|
       dir = output_dir + dir
       dir.mkdir
     end
@@ -29,7 +29,7 @@ task :build do
   puts
   puts 'Copy static files:'
   static_files = {
-    'static/font-awesome' => 'output/css/font-awsome',
+    'static/font-awesome' => 'output/css/font-awesome',
     'static/js/jquery.hcaptions.js' => 'output/js/jquery.hcaptions.js',
     'static/bootstrap' => 'output/css/bootstrap',
     'static/img/30c3katze-nibbler.jpg' => 'output/img/30c3katze-nibbler.jpg',
