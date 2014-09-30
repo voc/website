@@ -1,0 +1,86 @@
+#about.text-center
+  %h3 CCC Video Operation Center
+  %img{ src: 'img/30c3katze-nibbler.jpg' }
+
+  #container
+    #content
+      CCC Video Operation Center (c3voc) is a working group consisting of
+      %a{ href: 'https://ccc.de' } Chaos Computer Club
+      enthusiasts running lecture recording and streaming infrastructure on and for different chaos
+      %a{ href: 'https://c3voc.de/eventkalender'} events or conferences
+      \.
+      #sections
+        #content-events
+          .logo
+            %a{ href: '#events' }
+              %i.fa.fa-4x.fa-video-camera
+          .headline
+            %h4 Events
+          .content
+            We try to cover all events organized by the CCC and close friends.
+        #content-contact
+          .logo
+            %a{ href: '#contact' }
+              %i.fa.fa-4x.fa-envelope
+          .headline
+            %h4 Contact
+          .content
+            Leave a comment, yell at us or just chat
+        #content-recordings
+          .logo
+            %a{ href: 'http://media.ccc.de' }
+              %i.fa.fa-4x.fa-cloud
+          .headline
+            %h4 Recordings
+          .content
+            Bridge the time gap between events and have a look into the video archive
+
+        #content-streaming
+          .logo
+            %a{ href: 'http://streaming.media.ccc.de' }
+              %i.fa.fa-4x.fa-play-circle-o
+          .headline
+            %h4 Streaming
+          .content
+            We're doing it live!1!!
+
+#events.text-center
+  = render '_events'
+  %a{ href: "#top", class:"back-to-top" } Back to Top
+
+
+
+#contact.text-center
+  %h3 Contact
+  %img{ src: 'img/raw_IMG_7044_klein.jpg' }
+
+  #container
+    #content
+      .text
+        The most direct way to reach us is to visit us on
+        %a{href: 'irc.hackint.eu'} irc.hackint.eu
+        in #voc .
+        %br
+        You can also reach us via email
+        %a{href: 'http://www.google.com/recaptcha/mailhide/d?k=01kiG1Aqp5GKUf3bawshHQ8Q==&amp;c=vF6iYQaRAYououYBRJunrQ==', onclick: "window.open('http://www.google.com/recaptcha/mailhide/d?k\07501kiG1Aqp5GKUf3bawshHQ8Q\75\75\46c\75vF6iYQaRAYououYBRJunrQ\75\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;", title: 'Reveal this e-mail address' } v...@c3voc.de
+        \.
+        %br
+        We try to document most of the setup in the public pages of our
+        %a{href: 'https://c3voc.de/wiki', target: '_blank'} wiki
+        %br
+        Stay up to date by following us on Twitter and follow us on GitHub if you are interested in looking behind the scene.
+      .list
+        %ul.list-inline.banner-social-buttons
+          %li
+            %a{ href: "https://twitter.com/c3voc", class: "btn btn-default btn-lg" }
+              %i.fa.fa-twitter.fa-fw
+              %span.network-name
+                Twitter
+          %li
+            %a{ href: "https://github.com/voc", class: "btn btn-default btn-lg" }
+              %i{ class: "fa fa-github fa-fw" }
+              %span.network-name
+                Github
+          %li
+            %a{ href: "https://flattr.com/submit/auto?user_id=c3voc&url=http%3A%2F%2Fc3voc.de", target: "_blank" }
+              %img{ src: "img/flattr-badge-large.png", alt: "Flattr this", title: "Flattr this", border: "0" }
