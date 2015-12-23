@@ -33,6 +33,3 @@ DEPENDENCIES
   nanoc (~> 3.8.0)
   nokogiri
   sass (~> 3.2.14)
-
-BUNDLED WITH
-   1.10.6
