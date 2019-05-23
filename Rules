@@ -26,7 +26,7 @@ compile '*' do
         filter :sass, Compass.sass_engine_options
         filter :relativize_paths, type: :css
       when 'haml'
-        filter :haml, { ugly: true, autoclose: ['<source>'], encoding: 'utf-8', format: :html5 }
+        filter :haml, { autoclose: ['<source>'], encoding: 'utf-8', format: :html5 }
         layout 'default'
         filter :relativize_paths, type: :html
       when 'js'
@@ -60,4 +60,4 @@ route '*' do
   end
 end
 
-layout '*', :haml, {ugly: false, autoclose: ['<source>', '<audio>', '<video>'], format: :html5}
+layout '*', :haml, {autoclose: ['<source>', '<audio>', '<video>'], format: :html5}
