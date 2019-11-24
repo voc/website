@@ -1,0 +1,33 @@
+# Build docker images on every push to master.
+
+name: build docker image
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - # https://github.com/actions/checkout
+        name: Checkout
+        uses: actions/checkout@v1
+      
+      - name: next release release
+        run: |
+          echo "::set-env name=nextversion_sha::$(echo ${GITHUB_SHA} | cut -c1-8)"
+        if: success()
+
+      - name: Docker login
+        run: |
+          docker login docker.pkg.github.com -u voc -p ${{ secrets.GITHUB_TOKEN }}
+        if: success()
+      
+      - name: Docker Build - master
+        run: make build build_version="$nextversion_sha"
+        if: success() && github.ref == 'refs/heads/master'
+    
+      - name: Push docker image latest
+        run: make latest build_version="$nextversion_sha"
+        if: success() && github.ref == 'refs/heads/master'
