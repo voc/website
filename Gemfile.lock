@@ -18,7 +18,7 @@ GEM
       cri (~> 2.3)
     nokogiri (1.10.3)
       mini_portile2 (~> 2.4.0)
-    rack (2.0.8)
+    rack (2.2.3)
     sass (3.2.19)
     temple (0.8.1)
     tilt (2.0.9)
