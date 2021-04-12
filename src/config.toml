@@ -1,0 +1,102 @@
+baseURL = "https://c3voc.de"
+title = "CCC Video Operation Center"
+theme = "hugo-coder"
+languageCode = "en"
+defaultContentLanguage = "en"
+paginate = 20
+
+pygmentsStyle = "bw"
+pygmentsCodeFences = true
+pygmentsCodeFencesGuessSyntax = true
+
+enableEmoji = true
+
+[params]
+  author = "c3voc"
+  description = "CCC Video Operation Center (C3VOC) is a working group consisting of Chaos Computer Club enthusiasts running lecture recording and streaming infrastructure on and for different chaos events or conferences."
+  keywords = "c3voc,voc,winkekatze,ccc,video,tracker-goes-brumbrum"
+  info = "CCC Video Operation Center is a working group consisting of Chaos Computer Club enthusiasts running lecture recording and streaming infrastructure on and for different chaos events or conferences."
+  avatarURL = "images/logo.svg"
+  footerContent = "<a href='https://c3voc.de/wiki/privacy'>Datenschutz/Impressum</a>"
+  dateFormat = "January 2, 2006"
+  hideFooter = false
+  hideCredits = true
+  hideCopyright = true
+  colorScheme = "dark"
+  hideColorSchemeToggle = true
+  # Series see also post count
+  maxSeeAlsoItems = 5
+  # Enable Twemoji
+  enableTwemoji = false
+  # Custom CSS
+  customCSS = []
+  # Custom SCSS
+  customSCSS = []
+  # Custom JS
+  customJS = []
+
+# If you want to implement a Content-Security-Policy, add this section
+[params.csp]
+  childsrc = ["'self'"]
+  fontsrc = ["'self'"]
+  formaction = ["'self'"]
+  framesrc = ["'self'"]
+  imgsrc = ["'self'"]
+  objectsrc = ["'none'"]
+  stylesrc = ["'self'", "'unsafe-inline'"]
+  scriptsrc = ["'self'", "'unsafe-inline'"]
+  prefetchsrc = ["'self'"]
+  connectsrc = ["'self'"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+[[params.social]]
+  name = "Github"
+  icon = "fa fa-github-square"
+  weight = 1
+  url = "https://github.com/voc"
+
+[[params.social]]
+  name = "Wiki"
+  icon = "fa fa-pencil-square"
+  weight = 2
+  url = "https://c3voc.de/wiki/"
+
+[[params.social]]
+  name = "Twitter"
+  icon = "fa fa-twitter-square"
+  weight = 3
+  url = "https://twitter.com/c3voc"
+
+[[params.social]]
+  name = "Mastodon"
+  icon = "fa fa-mastodon-square"
+  weight = 3
+  url = "https://chaos.social/@c3voc"
+
+[languages.en]
+  languageName = ":uk:"
+
+[[languages.en.menu.main]]
+  name = "About"
+  weight = 1
+  url = "/about/"
+
+[[languages.en.menu.main]]
+  name = "Events"
+  weight = 1
+  url = "/events/"
+
+[[languages.en.menu.main]]
+  name = "Recordings"
+  weight = 2
+  url = "https://media.ccc.de"
+
+[[languages.en.menu.main]]
+  name = "Contact"
+  weight = 3
+  url = "contact/"
