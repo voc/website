@@ -4,6 +4,18 @@ title: "Events"
 
 ![](header.jpg)
 {{< events >}}
+<!-- 2021 -->
+	{{< event image="divoc_r2r.png" slug="divoc_r2r" title="DiVOC Reboot to Respawn" link="https://di.c3voc.de/r2r:start" >}} <!-- 2021-04-02 -->
+
+<!-- 2020 -->
+	{{< event slug="rc3" title="RC3" link="https://links.rc3.world/" >}} <!-- 2020-12-27 -->
+	{{< event image="divoc_ptt.png" slug="divoc_ptt" title="DiVOC Push To Talk" link="https://di.c3voc.de/ptt:start" >}} <!-- 2020-09-04 -->
+	{{< event slug="froscon2020" title="FrOSCon 2020" link="https://froscon.de" >}} <!-- 2020-08-21 -->
+	{{< event image="divoc.png" slug="divoc" title="DiVOC Hidden Service" link="https://di.c3voc.de/hiddenservice:start" >}} <!-- 2020-04-11 -->
+
+<!-- 2019 -->
+	{{< event image="36c3.png" slug="36c3" title="Chaos Communication Congress 2019" >}} <!-- 2019-12-27 -->
+
 <!-- 2018 -->
 	{{< event slug="froscon2018" title="FrOSCon 2018" link="https://froscon.de" >}} <!-- 2018-08-25 -->
 	{{< event slug="fusion18" title="Fusion Festival 2018" link="https://archiv.fusion-festival.de/2018/de/2018/home/" >}} <!-- 2018-06-27 -->
