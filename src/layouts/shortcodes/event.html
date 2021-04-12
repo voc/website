@@ -5,24 +5,27 @@ Loosely based on https://github.com/liwenyip/hugo-easy-gallery/
 <!-- count how many times we've called this shortcode; load the css if it's the first time -->
 {{- if not ($.Page.Scratch.Get "figurecount") }}<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />{{ end }}
 {{- $.Page.Scratch.Add "figurecount" 1 -}}
-<!-- use either src or link-thumb for thumbnail image -->
+
+{{ $recordings := (.Get "recordings" | default (printf "https://media.ccc.de/c/%s" (.Get "slug"))) }}
+{{ $title := (.Get "title" | default (.Get "slug")) }}
 
 <div class="box" {{- with .Get "width" }}style="width:{{.}};padding-bottom:{{.}};"{{end}}>
   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <div class="img">
       <img loading="lazy" src="/events/images/{{ .Get "image" | default (printf "%s.jpg" (.Get "slug")) }}" />
     </div>
+
     {{- if or (.Get "title") (.Get "slug") }}
     <figcaption class="topcaption">
-      <a href="{{ .Get "link" }}">
-        {{- with .Get "title" | default (.Get "slug") }}<h4>{{.}}</h4>{{ end }}
-      </a>
+      {{- with .Get "link" }}<a href="{{.}}">{{ end }}
+        <h4>{{$title}}</h4>
+      {{- with .Get "link" }}</a>{{ end }}
     </figcaption>
     {{ end }}
 
     {{- if or (.Get "recordings") (.Get "slug") }}
       <figcaption class="bottomcaption">
-        <a href="{{ .Get "recordings" | default (printf "https://media.ccc.de/c/%s" (.Get "slug")) }}">
+        <a href="{{ $recordings }}">
           <p>Recordings</p>
         </a>
       </figcaption>
