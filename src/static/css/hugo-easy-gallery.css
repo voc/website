@@ -93,15 +93,21 @@ img / a styles
     right: 0;
     top: 0;
     bottom: 0;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .gallery.hover-effect-zoom figure:hover .img {
     transform: scale(1.05);
 }
-.gallery img {
-    display: none; /* only show the img if not inside a gallery */
+
+.gallery .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: none;
+    max-width: none;
 }
 
 figure a[itemprop="contentUrl"] {
@@ -183,7 +189,17 @@ figcaption.bottomcaption p {
     margin: auto; /* override style in theme */
 }
 
-figcaption.bottomcaption p a {
+figcaption.topcaption a {
+  text-decoration: none;
+}
+
+figcaption.bottomcaption a {
+  text-decoration: none;
+}
+
+figcaption.bottomcaption a p {
   color: #FFF;
   font-style: normal;
+  text-decoration: none;
 }
+
