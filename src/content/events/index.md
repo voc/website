@@ -14,7 +14,7 @@ title: "Events"
 	{{< event image="divoc.png" slug="divoc" title="DiVOC Hidden Service" link="https://di.c3voc.de/hiddenservice:start" >}} <!-- 2020-04-11 -->
 
 <!-- 2019 -->
-	{{< event image="36c3.png" slug="36c3" title="Chaos Communication Congress 2019" >}} <!-- 2019-12-27 -->
+	{{< event image="36c3.png" slug="36c3" title="Chaos Communication Congress 2019" link="https://events.ccc.de" >}} <!-- 2019-12-27 -->
 
 <!-- 2018 -->
 	{{< event slug="froscon2018" title="FrOSCon 2018" link="https://froscon.de" >}} <!-- 2018-08-25 -->
