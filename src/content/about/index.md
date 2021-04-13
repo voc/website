@@ -50,7 +50,7 @@ As we'd like to keep our content and its delivery as neutral as possible and wan
 We kinda feel bad about that, as they are making most of our work possible, so here we'll take the chance to thank some of our long-time partners.
 
 Thanks to [Selfnet e.V.](https://www.selfnet.de) for allowing us to host servers at your datacenter,  
-Thanks to [rrbone](https://www.rrbone.net) for allowing us to host servers at your datacenters and for providing a mirror for media.ccc.de,  
+Thanks to [rrbone](https://www.rrbone.net) for allowing us to host servers at your datacenters and [Academy for Theatre and Digitality](https://theater.digital) for providing a mirror for media.ccc.de,  
 Thanks to [OpenSuse](https://www.opensuse.org) and [//SEIBERT/MEDIA](https://seibert-media.net) for your time and equipment,  
 Thanks to [FeM e.V.](https://fem.tu-ilmenau.de) for your time and for allowing us to host servers at your datacenter.
 
