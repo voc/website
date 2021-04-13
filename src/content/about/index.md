@@ -2,6 +2,8 @@
 title: "About c3voc"
 ---
 
+![](header.jpg)
+
 CCC Video Operation Center is a working group consisting of Chaos Computer Club enthusiasts running lecture recording and streaming infrastructure on and for different chaos events or conferences.
 
 This page only gives a small overview of what we are doing, our [Wiki](https://c3voc.de/wiki/) contains a lot more information.
@@ -47,9 +49,9 @@ As we'd like to keep our content and its delivery as neutral as possible and wan
 
 We kinda feel bad about that, as they are making most of our work possible, so here we'll take the chance to thank some of our long-time partners.
 
-Thanks to Selfnet e.V. for allowing us to host servers at your datacenter,  
-Thanks to rrbone for allowing us to host servers at your datacenters and for providing a mirror for media.ccc.de,  
-Thanks to OpenSuse and SEIBERT MEDIA for your time and equipment,  
-Thanks to FeM e.V. for your time and for allowing us to host servers at your datacenter.
+Thanks to [Selfnet e.V.](https://www.selfnet.de) for allowing us to host servers at your datacenter,  
+Thanks to [rrbone](https://www.rrbone.net) for allowing us to host servers at your datacenters and for providing a mirror for media.ccc.de,  
+Thanks to [OpenSuse](https://www.opensuse.org) and [//SEIBERT/MEDIA](https://seibert-media.net) for your time and equipment,  
+Thanks to [FeM e.V.](https://fem.tu-ilmenau.de) for your time and for allowing us to host servers at your datacenter.
 
 And a **huge** thanks to all the people who helped us during events, lent or gave us equipment over all these years, or were just superb human (or cyborg) beings in any other way :)
