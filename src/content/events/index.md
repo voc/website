@@ -1,6 +1,5 @@
 ---
 title: "Events"
-custom_heading: "Events (<a href='https://c3voc.de/eventkalender'>Calendar</a>)"
 ---
 
 ![](header.jpg)
@@ -40,7 +39,7 @@ custom_heading: "Events (<a href='https://c3voc.de/eventkalender'>Calendar</a>)"
 <!-- 2016 -->
 	{{< event slug="33c3" title="Chaos Communication Congress 2016" link="https://events.ccc.de" >}}
 	{{< event slug="lnp200" title="Zweihundert – 5 Jahre Logbuch:Netzpolitik" link="https://logbuch-netzpolitik.de/zweihundert" recordings="https://logbuch-netzpolitik.de/lnp200-aus-mitlike" >}} <!-- 2016-10-?? -->
-	{{< event slug="mrmcd16" title="MRMCD 2016" >}}
+	{{< event slug="mrmcd16" link="https://2016.mrmcd.net" title="MRMCD 2016" >}}
 	{{< event image="foss4g2016.jpg" title="FOSS4G 2016" link="http://2016.foss4g.org/" >}} <!-- 2016-08-24 -->
 	{{< event slug="froscon2016" title="FrOSCon 2016" link="https://froscon.de" >}} <!-- 2016-08-20 -->
 	{{< event slug="emf16" title="Electromagnetic Field 2016" link="https://www.emfcamp.org" >}} <!-- 2016-08-05 -->
@@ -60,8 +59,8 @@ custom_heading: "Events (<a href='https://c3voc.de/eventkalender'>Calendar</a>)"
 	{{< event slug="fiffkon14" title="FIfF Jahrestagung 2014" link="https://www.fiff.de/veranstaltungen/fiffkon/jt-2014" >}}
 	{{< event slug="froscon2014" title="FrOSCon 2014" link="https://froscon.de" >}}
 	{{< event image="geekend14b.jpg" title="Geekend 2014" >}}
-	{{< event slug="hackover2014" title="Hackover 2014" >}}
-	{{< event slug="mrmcd2014" title="MRMCD 2014" >}}
+	{{< event slug="hackover2014" link="https://hackover.de" title="Hackover 2014" >}}
+	{{< event slug="mrmcd2014" link="https://2014.mrmcd.net" title="MRMCD 2014" >}}
 	{{< event image="ppw14b.jpg" title="4. Podlove Podcaster Workshop" link="https://metaebene.me/blog/2014/08/17/4-podlove-podcaster-workshop-in-berlin-am-22-23-november-2014/" >}}
 	{{< event slug="31c3" title="Chaos Communication Congress 2014" link="https://events.ccc.de" >}}
 
