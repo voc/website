@@ -90,6 +90,12 @@
   }
 }
 
+body.colorscheme-light {
+  .avatar img {
+    filter: invert(1);
+  }
+}
+
 .list {
   ul {
     margin: 3.2rem 0 3.2rem 0;

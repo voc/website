@@ -197,8 +197,9 @@ figcaption.bottomcaption a {
   text-decoration: none;
 }
 
+figcaption.topcaption a h4,
 figcaption.bottomcaption a p {
-  color: #FFF;
+  color: #dadada;
   font-style: normal;
   text-decoration: none;
 }

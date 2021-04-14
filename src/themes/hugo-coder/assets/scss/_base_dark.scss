@@ -53,6 +53,10 @@
   table th {
     border: 2px solid $alt-fg-color-dark;
   }
+
+  table tr:last-child td {
+    border-bottom: 0;
+  }
 }
 
 body.colorscheme-dark {

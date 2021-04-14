@@ -23,9 +23,15 @@ function generateEventRow(start_date, end_date, name, description) {
   datecol.style.width = '280px';
   datecol.style['text-align'] = "right";
   datecol.style['font-family'] = 'Monospace';
+  datecol.style['border-top'] = "0"
+  datecol.style['border-left'] = "0"
+  datecol.style['border-right'] = "0"
   evrow.appendChild(datecol);
 
   var namecol = document.createElement('td');
+  namecol.style['border-top'] = "0"
+  namecol.style['border-left'] = "0"
+  namecol.style['border-right'] = "0"
   if (description != "") {
     var eventlink = document.createElement('a');
     eventlink.href = description

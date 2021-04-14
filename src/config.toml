@@ -23,7 +23,7 @@ enableEmoji = true
   hideCredits = true
   hideCopyright = true
   colorScheme = "dark"
-  hideColorSchemeToggle = true
+  hideColorSchemeToggle = false
   # Series see also post count
   maxSeeAlsoItems = 5
   # Enable Twemoji
