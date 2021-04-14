@@ -74,6 +74,5 @@ function loadEvents(show_running=true, show_upcoming=true) {
         document.getElementById('upcoming-events-calendar').style.display = 'table';
       }
     }
-    console.log(upcoming_events);
   });
 }
