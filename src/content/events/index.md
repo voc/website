@@ -3,6 +3,11 @@ title: "Events"
 ---
 
 ![](header.jpg)
+
+{{< eventcalendar >}}
+
+## Past Events
+
 {{< events >}}
 <!-- 2021 -->
 	{{< event image="divoc_r2r.png" slug="divoc_r2r" title="DiVOC Reboot to Respawn" link="https://di.c3voc.de/r2r:start" >}} <!-- 2021-04-02 -->

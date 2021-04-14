@@ -1,4 +1,4 @@
-baseURL = "https://c3voc.de"
+baseURL = "https://preview.c3voc.de"
 title = "CCC Video Operation Center"
 theme = "hugo-coder"
 languageCode = "en"
@@ -46,7 +46,7 @@ enableEmoji = true
   stylesrc = ["'self'", "'unsafe-inline'"]
   scriptsrc = ["'self'", "'unsafe-inline'"]
   prefetchsrc = ["'self'"]
-  connectsrc = ["'self'"]
+  connectsrc = ["'self'", "https://c3voc.de"]
 
 [taxonomies]
   category = "categories"
