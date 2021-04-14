@@ -13,7 +13,7 @@ function getJSON(url, callback) {
   xhr.send();
 };
 
-function generateEventRow(start_date, end_date, name) {
+function generateEventRow(start_date, end_date, name, description) {
   var evrow = document.createElement('tr');
   evrow.classList.add("eventcalendar-entry");
 
@@ -26,7 +26,14 @@ function generateEventRow(start_date, end_date, name) {
   evrow.appendChild(datecol);
 
   var namecol = document.createElement('td');
-  namecol.innerText = name;
+  if (description != "") {
+    var eventlink = document.createElement('a');
+    eventlink.href = description
+    eventlink.innerText = name
+    namecol.appendChild(eventlink);
+  } else {
+    namecol.innerText = name;
+  }
   namecol.classList.add("eventcalendar-name");
   evrow.appendChild(namecol);
 
@@ -60,7 +67,7 @@ function loadEvents(show_running=true, show_upcoming=true) {
     if (show_running) {
       for (var i in running_events) {
         var event = running_events[i];
-        document.getElementById('running-events-calendar').appendChild(generateEventRow(event.start_date, event.end_date, event.name));
+        document.getElementById('running-events-calendar').appendChild(generateEventRow(event.start_date, event.end_date, event.name, event.description));
         document.getElementById('running-events-heading').style.display = 'block';
         document.getElementById('running-events-calendar').style.display = 'table';
       }
@@ -69,7 +76,7 @@ function loadEvents(show_running=true, show_upcoming=true) {
     if (show_upcoming) {
       for (var i in upcoming_events) {
         var event = upcoming_events[i];
-        document.getElementById('upcoming-events-calendar').appendChild(generateEventRow(event.start_date, event.end_date, event.name));
+        document.getElementById('upcoming-events-calendar').appendChild(generateEventRow(event.start_date, event.end_date, event.name, event.description));
         document.getElementById('upcoming-events-heading').style.display = 'block';
         document.getElementById('upcoming-events-calendar').style.display = 'table';
       }
