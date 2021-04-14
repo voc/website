@@ -97,6 +97,11 @@ enableEmoji = true
   url = "https://media.ccc.de"
 
 [[languages.en.menu.main]]
+  name = "Wiki"
+  weight = 2
+  url = "https://c3voc.de/wiki/"
+
+[[languages.en.menu.main]]
   name = "Contact"
   weight = 3
   url = "contact/"
