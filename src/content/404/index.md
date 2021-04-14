@@ -2,4 +2,4 @@
 title: "Winkekatze Not Found"
 ---
 
-![](header.jpg)
+![](/404/header.jpg)
