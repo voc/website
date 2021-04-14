@@ -2,9 +2,7 @@
   <article>
     <header>
       <h1 class="title">
-        <a class="title-link" href="{{ .Permalink | safeURL }}">
-          {{ .Title }}
-        </a>
+        {{ .Params.custom_heading | default .Title | safeHTML }}
       </h1>
     </header>
 

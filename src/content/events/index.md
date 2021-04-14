@@ -1,5 +1,6 @@
 ---
 title: "Events"
+custom_heading: "Events (<a href='https://c3voc.de/eventkalender'>Calendar</a>)"
 ---
 
 ![](header.jpg)
