@@ -1,4 +1,4 @@
-baseURL = "https://preview.c3voc.de"
+baseURL = "https://c3voc.de"
 title = "CCC Video Operation Center"
 theme = "hugo-coder"
 languageCode = "en"
