@@ -52,8 +52,8 @@ We kinda feel bad about that, as they are making most of our work possible, so h
 Thanks to [Selfnet e.V.](https://www.selfnet.de) for allowing us to host servers at your datacenter,  
 Thanks to [rrbone](https://www.rrbone.net) for allowing us to host servers at your datacenters and [Academy for Theatre and Digitality](https://theater.digital) for providing a mirror for media.ccc.de,  
 Thanks to [OpenSuse](https://www.opensuse.org) and [//SEIBERT/MEDIA](https://seibert-media.net) for your time and equipment,  
-Thanks to [FeM e.V.](https://fem.tu-ilmenau.de) for your time and for allowing us to host servers at your datacenter,
-Thanks to [myLoc](https://www.myloc.de/) for allowing us to host servers at your datacenter,
+Thanks to [FeM e.V.](https://fem.tu-ilmenau.de) for your time and for allowing us to host servers at your datacenter,  
+Thanks to [myLoc](https://www.myloc.de/) for allowing us to host servers at your datacenter,  
 Thanks to [Freifunk München](https://ffmuc.net/) for simply giving us some seriously cool server hardware.
 
 And a **huge** thanks to all the people who helped us during events, lent or gave us equipment over all these years, or were just superb human (or cyborg) beings in any other way :)
