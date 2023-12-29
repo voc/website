@@ -67,12 +67,6 @@ enableEmoji = true
   url = "https://c3voc.de/wiki/"
 
 [[params.social]]
-  name = "Twitter"
-  icon = "fa fa-twitter-square"
-  weight = 3
-  url = "https://twitter.com/c3voc"
-
-[[params.social]]
   name = "Mastodon"
   icon = "fa fa-mastodon-square"
   weight = 3
